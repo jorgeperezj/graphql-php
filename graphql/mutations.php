@@ -2,12 +2,12 @@
 
 use GraphQL\Type\Definition\ObjectType;
 
-require('mutations/userMutations.php');
-require('mutations/addressMutations.php');
+require('inputs/UserInputs.php');
+require('resolvers/UserResolver.php');
+require('mutations/UserMutations.php');
 
 $mutations = array();
 $mutations += $userMutations;
-$mutations += $addressMutations;
 
 $rootMutation = new ObjectType([
     'name' => 'Mutation',
