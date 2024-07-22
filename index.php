@@ -9,11 +9,11 @@ $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'prueba',
+    'database'  => 'socialmedia',
     'username'  => 'root',
     'password'  => 'root',
-    'charset'   => 'utf8',
-    'collation' => 'utf8_unicode_ci',
+    'charset'   => 'utf8mb3_bin',
+    // 'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
 ]);
 

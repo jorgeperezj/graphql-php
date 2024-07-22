@@ -2,6 +2,7 @@
 
 use GraphQL\GraphQL;
 use GraphQL\Type\Schema;
+use Illuminate\Support\Facades\Log;
 
 require('types.php');
 require('query.php');
@@ -22,7 +23,8 @@ try {
 } catch(\Exception $e) {
     $output = [
         'error' => [
-            'message' => $e->getMessage()
+            'message' => $e->getMessage(),
+            Log::debug($e->getMessage()." ".$e->getFile()." ".$e->getLine()),
         ]
     ];
 }

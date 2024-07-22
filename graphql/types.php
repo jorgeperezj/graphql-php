@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\User;
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type;
 
